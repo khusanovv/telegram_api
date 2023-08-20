@@ -50,7 +50,7 @@ http://localhost:8080/groups
 - You need to register before creating this group and if you going to create gruops or channels, you needs token
 ```
 {
-    "type":"private",
+    "type":"group",
     "title":"programmers",
     "link":"https://t.me/boburshoh_blog",
     "avatarca":"https://zahiraccounting.com/en-my/wp-content/uploads/2015/10/zahir-accounting-software-have-more-than-60.000-users.png"
@@ -61,3 +61,48 @@ http://localhost:8080/groups
 ## Create chennel
 http://localhost:8080/chennel
 - You need to register before creating this group and if you going to create gruops or channels, you needs token
+{
+    "type":"channel",
+    "title":"programmers",
+    "link":"https://t.me/boburshoh_blog",
+    "avatarca":"https://zahiraccounting.com/en-my/wp-content/uploads/2015/10/zahir-accounting-software-have-more-than-60.000-users.png"
+
+}
+
+## Get user with token
+http://localhost:8080/users
+
+-First, you need to give a token, and through this token, the user data will come out
+
+```
+{
+    "message": "user info",
+    "data": {
+        "id": 5,
+        "username": "ulugbek",
+        "first_name": "ALijonov",
+        "second_name": "Ibrohimov",
+        "description": "I`m fullstack developer",
+        "avatarca": null,
+        "password": "123456789",
+        "createdAt": "2023-08-20T09:13:19.018Z",
+        "updatedAt": "2023-08-20T09:13:19.018Z",
+        "Groups": [
+            {
+                "id": 5,
+                "type": "group",
+                "title": "yangi gurux",
+                "link": "gurux.com",
+                "avatarca": null,
+                "onwer_id": 5,
+                "Orders": {
+                    "order_id": 19,
+                    "user_id": 5,
+                    "group_id": 5,
+                    "channel_id": null
+                }
+            }
+        ]
+    }
+}
+```
