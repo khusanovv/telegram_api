@@ -59,7 +59,7 @@ http://localhost:8080/groups
 ```
 
 ## Create chennel
-http://localhost:8080/chennel
+http://localhost:8080/channel
 - You need to register before creating this group and if you going to create gruops or channels, you needs token
 {
     "type":"channel",
